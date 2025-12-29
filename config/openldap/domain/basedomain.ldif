@@ -1,0 +1,15 @@
+dn: dc=cestc,dc=com
+objectClass: top
+objectClass: dcObject
+objectclass: organization
+o: Server World
+dc: CESTC
+
+dn: cn=Manager,dc=cestc,dc=com
+objectClass: organizationalRole
+cn: Manager
+description: Directory Manager
+
+dn: ou=Group,dc=cestc,dc=com
+objectClass: organizationalUnit
+ou: Group

@@ -1,0 +1,4 @@
+dn: uid=user1,cn=kerberos,dc=cestc,dc=com
+changetype: modify
+replace: userPassword
+userPassword: {SASL}user1@CESTC.COM

@@ -1,0 +1,6 @@
+dn: cn=krb5kdc,dc=cestc,dc=com
+cn: krb5kdc
+sn: krb5kdc
+objectClass: inetOrgPerson
+userPassword: PASSWORD
+uid: krb5kdc

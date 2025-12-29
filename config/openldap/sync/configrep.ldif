@@ -1,0 +1,35 @@
+### Update Server ID with LDAP URL ###
+
+dn: cn=config
+changetype: modify
+replace: olcServerID
+olcServerID: SERVER_ID
+
+### Enable replication ###
+
+dn: olcOverlay=syncprov,olcDatabase={2}mdb,cn=config
+changetype: add
+objectClass: olcOverlayConfig
+objectClass: olcSyncProvConfig
+olcOverlay: syncprov
+olcSpCheckpoint: 100 10
+olcSpSessionLog: 100
+
+### Adding details for replication ###
+
+dn: olcDatabase={2}mdb,cn=config
+changetype: modify
+add: olcSyncRepl
+olcSyncRepl: rid=SERVER_INDEX
+  provider=ldap://OPENLDAP_IP
+  binddn="cn=Manager,dc=cestc,dc=com"
+  bindmethod=simple
+  credentials=PASSWORD
+  searchbase="dc=cestc,dc=com"
+  type=refreshAndPersist
+  schemachecking=on
+  retry="5 10 300 +"
+  timeout=1
+-
+add: olcMirrorMode
+olcMirrorMode: TRUE

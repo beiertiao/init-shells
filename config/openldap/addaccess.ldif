@@ -1,0 +1,6 @@
+dn: olcDatabase={2}mdb,cn=config
+add: olcAccess
+olcAccess: {0}to attrs=userPassword,shadowLastChange,krbPrincipalKey by dn.exact="cn=Manager,dc=cestc,dc=com" write by dn.exact="cn=krbadmin,dc=cestc,dc=com" write by dn.exact="cn=krb5kdc,dc=cestc,dc=com" read  by self =xw by anonymous auth by * none
+-
+add: olcAccess
+olcAccess: {1}to * by dn.exact="cn=Manager,dc=cestc,dc=com" write by dn.exact="cn=krbadmin,dc=cestc,dc=com" write by dn.exact="cn=krb5kdc,dc=cestc,dc=com" read by self read by users read by * none

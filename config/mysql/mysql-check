@@ -1,0 +1,3 @@
+# Run the hourly jobs
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+*/10 * * * * root /etc/keepalived/config_mysql.sh

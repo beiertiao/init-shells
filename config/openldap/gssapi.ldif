@@ -1,0 +1,4 @@
+dn: cn=config
+changetype: modify
+replace: olcAuthzRegexp
+olcAuthzRegexp: uid=([^,]*),cn=gssapi,cn=auth uid=$1,cn=kerberos,dc=cestc,dc=com

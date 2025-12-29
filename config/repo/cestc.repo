@@ -1,0 +1,13 @@
+[HDP-3.3]
+name=HDP
+baseurl=http://YUM_HOSTNAME/$basearch/centos/8/hdp/3.3.1.0-004/
+path=/
+enabled=1
+gpgcheck=0
+
+[OS]
+name=os
+baseurl=http://YUM_HOSTNAME/$basearch/centos/8/os/
+path=/
+enabled=1
+gpgcheck=0

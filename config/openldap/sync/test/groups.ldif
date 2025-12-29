@@ -1,0 +1,14 @@
+dn: cn=testgroup1,ou=Group,dc=cestc,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: ldapgroup1
+userPassword: PASSWORD
+gidNumber: 10000
+
+
+dn: cn=testgroup2,ou=Group,dc=cestc,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: ldapgroup2
+userPassword: PASSWORD
+gidNumber: 10001

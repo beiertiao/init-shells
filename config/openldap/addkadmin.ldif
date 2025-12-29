@@ -1,0 +1,6 @@
+dn: cn=krbadmin,dc=cestc,dc=com
+cn: krbadmin
+sn: krbadmin
+objectClass: inetOrgPerson
+userPassword: PASSWORD
+uid: krbadmin

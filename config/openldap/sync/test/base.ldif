@@ -1,0 +1,7 @@
+dn: ou=People,dc=cestc,dc=com
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=Group,dc=cestc,dc=com
+objectClass: organizationalUnit
+ou: Group
